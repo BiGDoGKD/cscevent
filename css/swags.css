@@ -1,0 +1,67 @@
+.swags {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5018382352941176) 20%, #0b0d15 100%);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    color: white;
+    z-index: 1;
+}
+
+.trophy-img {
+    width: 500px;
+    margin: auto;
+    z-index: 1;
+    position: absolute;
+    left: 35%;
+    top: 40%;
+}
+
+@media screen and (max-height: 720px) {
+    .trophy-img {
+        width: 500px;
+        margin: auto;
+        z-index: 1;
+        position: absolute;
+        left: 35%;
+        top: 40%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .trophy-img {
+        width: 250px;
+        margin: auto;
+        z-index: 1;
+        position: absolute;
+        left: 20%;
+        top: 40%;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 414px) {
+    .trophy-img {
+        width: 300px;
+        margin: auto;
+        z-index: 1;
+        position: absolute;
+        left: 20%;
+        top: 40%;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 768px) {
+    .trophy-img {
+        width: 350px;
+        margin: auto;
+        z-index: 1;
+        position: absolute;
+        left: 30%;
+        top: 40%;
+    }
+}

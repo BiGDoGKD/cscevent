@@ -1,0 +1,81 @@
+#welcome {
+    background: white;
+}
+
+#particles-js {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 150vh;
+    background: transparent;
+    background: linear-gradient(0deg, #0b0d15 20%, rgba(0, 0, 0, 0.5018382352941176) 100%);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    z-index: 1;
+    color: wheat;
+}
+
+.leaderboard-heading {
+    font-size: 4vw;
+    margin: 0% auto;
+}
+
+@media screen and (max-height: 720px) {
+    #particles-js {
+        height: 180vh;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .leaderboard-heading {
+        font-size: 8vw;
+        margin: 0% auto;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 414px) {
+    .leaderboard-heading {
+        font-size: 8vw;
+        margin: -10% auto;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 768px) {
+    .leaderboard-heading {
+        font-size: 6vw;
+        margin: 0% auto;
+    }
+}
+
+table {
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+    box-shadow: 0 5px 12px rgb(32 32 32 / 30%);
+    background: rgb(0 36 76 / 30%);
+    text-align: center;
+}
+
+th {
+    background: black;
+    color: #afafaf;
+    text-transform: uppercase;
+}
+
+tr:nth-child(odd) {
+    background: rgb(26 45 48 / 30%);
+}
+
+th,
+td {
+    padding: 8px 12px;
+}

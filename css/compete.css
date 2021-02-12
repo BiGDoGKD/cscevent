@@ -1,0 +1,14 @@
+.compete {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    background: linear-gradient(0deg, #0b0d15 20%, rgba(0, 0, 0, 0.5018382352941176) 100%);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    color: white;
+    z-index: 1;
+}

@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    cursor: none;
+    overflow-x: hidden;
+    background: url('../img/sky.jpg') no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+}
+
+.event-section {
+    position: relative;
+    display: flex;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background: white;
+    flex-direction: column;
+}
+
+.event-heading {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    top: 5%;
+    background: transparent;
+}
+
+.eh-1 {
+    font-size: 6vw;
+    margin: 0 auto;
+}
+
+
+/*Navbar CSS*/
+
+nav {
+    z-index: 1;
+    height: 10vh;
+    background: #eee;
+}
+
+.nav-links {
+    z-index: 1;
+    display: flex;
+    list-style: none;
+    width: 50%;
+    height: 10vh;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+}
+
+.nav-links li a {
+    color: #0b0d15;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.nav-links li a:hover {
+    color: white;
+    font-size: 1vw;
+}
+
+@media screen and (max-width: 768px) {
+    .line {
+        width: 30px;
+        height: 3px;
+        background: #0b0d15;
+        margin: 5px;
+    }
+    nav {
+        position: fixed;
+        width: 100%;
+        background: white;
+        z-index: 2;
+    }
+    .hamburger {
+        z-index: 4;
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+    }
+    .nav-links {
+        z-index: 2;
+        position: fixed;
+        background: #eee;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(100px at 90% -10%);
+        -webkit-clip-path: circle(100px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+    .nav-links.open {
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+        z-index: 2;
+        background: white;
+    }
+    .landing {
+        flex-direction: column;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .nav-links li a {
+        font-size: 25px;
+    }
+    .nav-links li:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2) {
+        transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3) {
+        transition: all 0.5s ease 0.6s;
+    }
+    li.fade {
+        opacity: 1;
+    }
+}
+
+
+/*End of Navbar CSS*/
+
+
+/*Welcome Section*/
+
+.welcome {
+    position: relative;
+    background: transparent;
+    height: 90vh;
+    width: 100%;
+}
+
+.front-cover {
+    display: flex;
+    flex-direction: column;
+    margin: auto 5vw;
+    background: transparent;
+    width: 100%;
+}
+
+.welcome-title {
+    z-index: 1;
+    font-size: 7vw;
+}
+
+.welcome-subtitle {
+    z-index: 1;
+    font-size: 2vw;
+}
+
+@media screen and (max-width: 768px) {
+    .welcome-title {
+        z-index: 0;
+        font-size: 15vw;
+    }
+    .welcome-subtitle {
+        width: 90%;
+        z-index: 0;
+        font-size: 5vw;
+    }
+    .cloud-area {
+        display: none;
+    }
+}
+
+
+/* End of Welcome Section*/
+
+
+/*Cursor Animations*/
+
+.cursor {
+    width: 0.75rem;
+    height: 0.75rem;
+    background: #0b0d15;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all 0.1s ease;
+    transition: all 0.5s ease-out;
+    transition-property: background, transform;
+    transform-origin: 50% 50%;
+    z-index: 0;
+    cursor: none;
+}
+
+.mouseleave {
+    transition: all 0.5s ease-out;
+}
+
+.mouseover {
+    transition: all 0.3s ease;
+}
+
+.link-grow {
+    transform: scale(12);
+    background: #0b0d15;
+}
+
+.welcome-title-grow {
+    background: yellow;
+    transform: scale(20);
+}
+
+.hovered-welcome-title {
+    font-size: 8vw;
+    transition: all 0.7s ease;
+}
+
+.cloud-animate {
+    background-image: url(../img/mycloud.gif);
+    background-color: transparent;
+    background-position: center;
+    background-size: cover;
+    transform: scale(20);
+}
+
+.team-work {
+    background-image: url(../img/ieee1.gif);
+    background-color: transparent;
+    background-position: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-size: cover;
+    transform: scale(20);
+    z-index: 7;
+}
+
+.leaderboardcursor {
+    background: lightgoldenrodyellow;
+    z-index: 7;
+}
+
+.teamcursor {
+    background: transparent;
+    transform: scale(20);
+    backdrop-filter: grayscale();
+    border: 1px solid black;
+    z-index: 7;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-link {
+        color: #0b0d15;
+    }
+}
+
+
+/*End of Cursor Animations*/
