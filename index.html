@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./css/sections.css">
     <link rel="stylesheet" href="./css/compete.css">
     <link rel="stylesheet" href="./css/swags.css">
+    <link rel="stylesheet" type="text/css" href="./css/util.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -58,24 +60,35 @@
         <div class="countdown event-section" style="    background: linear-gradient(0deg, #0b0d15 20%, rgba(0, 0, 0, 0.5018382352941176) 100%);">
 
             <div class="event-heading">
-                <h1 class="eh-1">STARTING SOON</h1>
+                <h1 class="eh-1" style="font-size:4vw;font-family: 'Orbitron', sans-serif;">STARTING SOON</h1>
             </div>
 
-            <div class="cd100">
-                <span class="cd-value days">35</span>
-                <span>Days</span>
-
-                <span class="cd-value hours">17</span>
-                <span>Hours</span>
-
-
-                <span class="cd-value minutes">50</span>
-                <span>Minutes</span>
-
-                <span class="cd-value seconds">39</span>
-                <span>Seconds</span>
+            <div class="wsize1">
+                <div class="flex-w flex-sa-m cd100 bor1 p-t-42 p-b-22 p-l-50 p-r-50 respon1">
+                    <div class="flex-col-c-m wsize2 m-b-20">
+                        <span class="l1-txt2 p-b-4 days">35</span>
+                        <span class="m2-txt2">Days</span>
+                    </div>
+                    <span class="l1-txt2 dotes p-b-22"></span>
+                    <div class="flex-col-c-m wsize2 m-b-20">
+                        <span class="l1-txt2 p-b-4 hours">17</span>
+                        <span class="m2-txt2">Hours</span>
+                    </div>
+                    <span class="l1-txt2 p-b-22 respon2"></span>
+                    <div class="flex-col-c-m wsize2 m-b-20">
+                        <span class="l1-txt2 p-b-4 minutes">50</span>
+                        <span class="m2-txt2">Minutes</span>
+                    </div>
+                    <span class="l1-txt2 p-b-22"></span>
+                    <div class="flex-col-c-m wsize2 m-b-20">
+                        <span class="l1-txt2 p-b-4 seconds">39</span>
+                        <span class="m2-txt2">Seconds</span>
+                    </div>
+                </div>
             </div>
-
+            <div class="video">
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/xcJtL7QggTI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
         </div>
     </section>
     <!--Info Section-->
@@ -278,7 +291,7 @@
             <div class="swiper-container">
                 <style>
                     .swiper-overlay {
-                       
+
                         /* Hidden by default */
                         width: 100%;
                         /* Full width (cover the whole page) */
@@ -296,7 +309,7 @@
                         /* Add a pointer on hover */
                     }
 
-                    .swiper-overlay:hover{
+                    .swiper-overlay:hover {
                         display: none;
                     }
                 </style>
@@ -309,13 +322,13 @@
                     <div class="swiper-slide" style="background: url('./slider/6.jpg')center center ; background-size:cover;"></div>
                     <div class="swiper-slide" style="background: url('./slider/7.jpg')center center ; background-size:cover;"></div>
                     <div class="swiper-slide" style="background: url('./slider/8.jpg')center center ; background-size:cover;">Competitor
-                    <div class="swiper-slide" style="background: url('./slider/9.jpg')center center ; background-size:cover;">###iv>
-                    <div class="swiper-slide" style="background: url('./slider/10.jpg')center center ; background-size:cover;"></div>
+                        <div class="swiper-slide" style="background: url('./slider/9.jpg')center center ; background-size:cover;">###iv>
+                            <div class="swiper-slide" style="background: url('./slider/10.jpg')center center ; background-size:cover;"></div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
                 </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-            </div>
-        </div>
     </section>
     <section id="footer">
         <div class="footer event-section">
@@ -347,6 +360,24 @@
                 el: '.swiper-pagination',
                 clickable: true,
             },
+        });
+    </script>
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="vendor/countdowntime/moment.min.js"></script>
+    <script src="vendor/countdowntime/moment-timezone.min.js"></script>
+    <script src="vendor/countdowntime/moment-timezone-with-data.min.js"></script>
+    <script src="vendor/countdowntime/countdowntime.js"></script>
+    <script>
+        $('.cd100').countdown100({
+
+            endtimeYear: 0,
+            endtimeMonth: 0,
+            endtimeDate: 35,
+            endtimeHours: 18,
+            endtimeMinutes: 0,
+            endtimeSeconds: 0,
+            timeZone: ""
+
         });
     </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
