@@ -10,6 +10,15 @@ hamburger.addEventListener("click", () => {
     })
 });
 
+links.forEach(link => {
+    link.addEventListener("click", () => {
+        navLinks.classList.toggle("open");
+        links.forEach(link => {
+            link.classList.toggle('fade');
+        })
+    })
+});
+
 
 /*Cursor Animations*/
 let mouseCursor = document.querySelector(".cursor");
