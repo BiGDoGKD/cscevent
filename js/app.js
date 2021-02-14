@@ -77,6 +77,26 @@ cloudArea.forEach(link => {
     });
 });
 
+swagsSection.addEventListener('mouseover', () => {
+    swagsSection.classList.add('change-test');
+    mouseCursor.classList.add('set-white');
+});
+
+swagsSection.addEventListener('mouseleave', () => {
+    swagsSection.classList.add('change-test');
+    mouseCursor.classList.remove('set-white');
+});
+
+competeSection.addEventListener('mouseover', () => {
+    competeSection.classList.add('change-test');
+    mouseCursor.classList.add('set-white');
+});
+
+competeSection.addEventListener('mouseleave', () => {
+    competeSection.classList.add('change-test');
+    mouseCursor.classList.remove('set-white');
+});
+
 infoSection.addEventListener('mouseover', () => {
     infoSection.classList.add('change-test');
     mouseCursor.classList.add('set-white');
@@ -125,6 +145,8 @@ teamSection.addEventListener('mouseleave', () => {
     teamSection.classList.add('mouseleave');
     mouseCursor.classList.remove('teamcursor');
 });
+
+
 
 
 /*Partical Js*/

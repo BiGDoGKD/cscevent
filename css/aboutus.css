@@ -1,0 +1,185 @@
+.ucscieee {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    background: #0b0d15;
+    color: white;
+    z-index: 1;
+}
+
+.sponsors {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-direction: row;
+    width: 100vw;
+    height: 350px;
+    background: #0a1528;
+    color: white;
+    z-index: 1;
+    align-items: center;
+    padding: 50px 50px;
+}
+
+.partnership-img {
+    height: 120px;
+    justify-self: center;
+}
+
+.partnership-ucsc {
+    height: 250px;
+    justify-self: center;
+    margin: 0 0 0 -100px;
+}
+
+.partnership-std {
+    height: 250px;
+    justify-self: center;
+}
+
+@media screen and (max-height: 720px) {
+    .sponsors {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        flex-direction: row;
+        width: 100vw;
+        height: 350px;
+        background: #0a1528;
+        color: white;
+        z-index: 1;
+        align-items: center;
+        padding: 50px 50px;
+    }
+    .partnership-img {
+        height: 120px;
+        justify-self: center;
+    }
+    .partnership-ucsc {
+        height: 250px;
+        justify-self: center;
+    }
+    .partnership-std {
+        height: 250px;
+        justify-self: center;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .sponsors {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        background: #0a1528;
+        color: white;
+        z-index: 1;
+        align-items: center;
+        padding: 50px 50px;
+    }
+    .partnership-img {
+        height: 40px;
+        justify-self: center;
+    }
+    .partnership-ucsc {
+        height: 140px;
+        justify-self: center;
+        margin: -50px 0 0 0;
+    }
+    .partnership-std {
+        height: 100px;
+        justify-self: center;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 414px) {
+    .sponsors {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        background: #0a1528;
+        color: white;
+        z-index: 1;
+        align-items: center;
+        padding: 50px 50px;
+    }
+    .partnership-img {
+        height: 60px;
+        justify-self: center;
+    }
+    .partnership-ucsc {
+        height: 140px;
+        justify-self: center;
+        margin: -50px 0 0 0;
+    }
+    .partnership-std {
+        height: 140px;
+        justify-self: center;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 768px) {
+    .sponsors {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        flex-direction: row;
+        width: 100vw;
+        height: 350px;
+        background: #0a1528;
+        color: white;
+        z-index: 1;
+        align-items: center;
+        padding: 50px 50px;
+    }
+    .partnership-img {
+        height: 60px;
+        justify-self: center;
+    }
+    .partnership-ucsc {
+        height: 150px;
+        justify-self: center;
+        margin: 0 0 0 -50px;
+    }
+    .partnership-std {
+        height: 150px;
+        justify-self: center;
+    }
+}
+
+@media screen and (max-width: 1500px) and (min-width: 1200px) {
+    .sponsors {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        flex-direction: row;
+        width: 100vw;
+        height: 350px;
+        background: #0a1528;
+        color: white;
+        z-index: 1;
+        align-items: center;
+        padding: 50px 50px;
+    }
+    .partnership-img {
+        height: 90px;
+        justify-self: center;
+    }
+    .partnership-ucsc {
+        height: 180px;
+        justify-self: center;
+        margin: 0 0 0 -50px;
+    }
+    .partnership-std {
+        height: 180px;
+        justify-self: center;
+    }
+}
